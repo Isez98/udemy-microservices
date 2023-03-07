@@ -4,8 +4,7 @@ import jwt from 'jsonwebtoken'
 // User model
 import { User } from '../models/user'
 // Custom error classes
-import { BadRequestError } from '../errors/bad-request-error'
-import { validateRequest } from '../middlewares/validate-request'
+import { validateRequest, BadRequestError } from '@dbtsr/common'
 
 const router = express.Router()
 

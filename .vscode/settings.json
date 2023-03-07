@@ -4,5 +4,6 @@
       "file:///home/isacc/Documents/vs-code/microservices/blog/skaffold.yaml",
       "file:///home/isacc/Documents/vs-code/microservices/ticketing/skaffold.yaml"
     ]
-  }
+  },
+  "cSpell.words": ["NATS"]
 }

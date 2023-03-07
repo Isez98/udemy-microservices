@@ -9,8 +9,7 @@ import { signUpRouter } from './routes/signUp'
 
 import cookieSession from 'cookie-session'
 // error handler
-import { errorHandler } from './middlewares/error-handler'
-import { NotFoundError } from './errors/not-found-error'
+import { errorHandler, NotFoundError } from '@dbtsr/common'
 
 const app = express()
 app.set('trust proxy', true)
