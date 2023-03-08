@@ -11,7 +11,7 @@ build:
   googleCloudBuild:
     projectId: ticketing-dev-369901
   artifacts:
-    - image: us.gcr.io/ticketing-dev-369901/auth
+    - image: isezhermac/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -19,7 +19,7 @@ build:
         manual:
           - dest: .
             src: 'src/**/*.ts'
-    - image: us.gcr.io/ticketing-dev-369901/client
+    - image: isezhermac/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -27,7 +27,7 @@ build:
         manual:
           - dest: .
             src: '**/*.js'
-    - image: us.gcr.io/ticketing-dev-369901/tickets
+    - image: isezhermac/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -35,7 +35,7 @@ build:
         manual:
           - dest: .
             src: 'src/**/*.ts'
-    - image: us.gcr.io/ticketing-dev-369901/orders
+    - image: isezhermac/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -43,7 +43,7 @@ build:
         manual:
           - dest: .
             src: 'src/**/*.ts'
-    - image: us.gcr.io/ticketing-dev-369901/expiration
+    - image: isezhermac/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -51,7 +51,7 @@ build:
         manual:
           - dest: .
             src: 'src/**/*.ts'
-    - image: us.gcr.io/ticketing-dev-369901/payments
+    - image: isezhermac/payments
       context: payments
       docker:
         dockerfile: Dockerfile
