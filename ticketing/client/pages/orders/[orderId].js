@@ -34,7 +34,7 @@ const OrderShow = ({ order, currentUser }) => {
 
   return (
     <div>
-      Time left to pay: {timeLeft} seconds
+      <div className="mb-2">Time left to pay: {timeLeft} seconds</div>
       <StripeCheckout
         token={({ id }) => doRequest({ token: id })}
         stripeKey="pk_test_51MfSlJFIe49UwPDIYXm1RBW3GNLtqCUu9zqrdr2jjYm4KDcMt9eOgKJ98inOVia6ZFF7OHblq0QT3m6gSexx0iTj00b40W8KCv"
